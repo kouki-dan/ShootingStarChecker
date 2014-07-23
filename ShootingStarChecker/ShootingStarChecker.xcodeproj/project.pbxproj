@@ -13,6 +13,8 @@
 		1E16389F197CEE8C00121221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E16389D197CEE8C00121221 /* Main.storyboard */; };
 		1E1638A1197CEE8C00121221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E1638A0197CEE8C00121221 /* Images.xcassets */; };
 		1E1638AD197CEE8C00121221 /* ShootingStarCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1638AC197CEE8C00121221 /* ShootingStarCheckerTests.swift */; };
+		1E1638B7197D1A8F00121221 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1638B6197D1A8F00121221 /* HomeTableViewController.swift */; };
+		1E1638B9197D1CF100121221 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1638B8197D1CF100121221 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1E1638A6197CEE8C00121221 /* ShootingStarCheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShootingStarCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E1638AB197CEE8C00121221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1638AC197CEE8C00121221 /* ShootingStarCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootingStarCheckerTests.swift; sourceTree = "<group>"; };
+		1E1638B6197D1A8F00121221 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1E1638B8197D1CF100121221 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				1E163896197CEE8C00121221 /* AppDelegate.swift */,
 				1E16389B197CEE8C00121221 /* ViewController.swift */,
 				1E16389D197CEE8C00121221 /* Main.storyboard */,
+				1E1638B6197D1A8F00121221 /* HomeTableViewController.swift */,
+				1E1638B8197D1CF100121221 /* MainTableViewCell.swift */,
 				1E1638A0197CEE8C00121221 /* Images.xcassets */,
 				1E163898197CEE8C00121221 /* ShootingStarChecker.xcdatamodeld */,
 				1E163894197CEE8C00121221 /* Supporting Files */,
@@ -211,9 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1638B7197D1A8F00121221 /* HomeTableViewController.swift in Sources */,
 				1E16389C197CEE8C00121221 /* ViewController.swift in Sources */,
 				1E16389A197CEE8C00121221 /* ShootingStarChecker.xcdatamodeld in Sources */,
 				1E163897197CEE8C00121221 /* AppDelegate.swift in Sources */,
+				1E1638B9197D1CF100121221 /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +409,7 @@
 				1E1638B2197CEE8C00121221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E1638B3197CEE8C00121221 /* Build configuration list for PBXNativeTarget "ShootingStarCheckerTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +418,7 @@
 				1E1638B5197CEE8C00121221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
