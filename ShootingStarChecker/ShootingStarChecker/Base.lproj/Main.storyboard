@@ -70,11 +70,11 @@
             </objects>
             <point key="canvasLocation" x="1331" y="392"/>
         </scene>
-        <!--Home-->
+        <!--Topic-->
         <scene sceneID="8Te-dr-ZBy">
             <objects>
                 <navigationController id="He0-cD-ZZN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="rOB-0o-Aiq"/>
+                    <tabBarItem key="tabBarItem" title="Topic" id="rOB-0o-Aiq"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kVG-N1-Pgr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
