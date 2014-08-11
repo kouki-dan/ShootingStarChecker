@@ -10,11 +10,6 @@ import UIKit
 
 class MainTableViewCell: UITableViewCell {
 
-    init(style: UITableViewCellStyle, reuseIdentifier: String) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        // Initialization code
-    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
