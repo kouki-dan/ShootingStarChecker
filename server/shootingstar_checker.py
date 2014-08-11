@@ -17,22 +17,14 @@ define("port", default=8888, help="run on the given port", type=int)
 
 from session import Session
 from app.HomeHandler import HomeHandler
-from app.NotificationHandler import NotificationHandler
 
 class Application(tornado.web.Application):
   def __init__(self):
     handlers = [
         (r"/", HomeHandler),
-        (r"/notifications", NotificationHandler),
-        (r"/magazine/(\d+|latest)?", MagazineHandler),
-        (r"/content/(\d+)/related", RelatedContentsHandler),
-        (r"/content/(\d+|random)", ContentsHandler),
-        (r"/auth/login", AuthLoginHandler),
-        (r"/auth/logout", AuthLogoutHandler),
-        (r"/notification/token", DeviceTokenHandler),
         ]
     settings = dict(
-        cookie_secret="aowuhdoqu3ahrODQUHD082he08dh202h0odiaej",
+        cookie_secret="iTEu6rAdhu8QPwwPzxZkpghUGqohdt",
         template_path=os.path.join(os.path.dirname(__file__), "templates"),
         static_path=os.path.join(os.path.dirname(__file__), "static"),
         debug=True,

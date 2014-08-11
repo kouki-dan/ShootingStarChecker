@@ -1,8 +1,6 @@
 
 import tornado.web
 
-from app.AuthHandlers import RedisAuthMixin
-
 class BaseHandler(tornado.web.RequestHandler):
   @property
   def db(self):

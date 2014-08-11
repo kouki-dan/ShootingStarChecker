@@ -26,13 +26,13 @@ class ShootingStar(Base):
 class BBS(Base):
   __tablename__ = "bbs"
   id = Column(Integer, Sequence('content_id_seq'), primary_key=True)
-  name - Column(Text())
+  name = Column(Text())
 
 class Response(Base):
   __tablename__ = "response"
   id = Column(Integer, Sequence('content_id_seq'), primary_key=True)
   username = Column(Text())
-  created = Column(Datetime)
+  created = Column(DateTime)
   text = Column(Text())
 #relationship
   relationship("BBS", backref="responses")
