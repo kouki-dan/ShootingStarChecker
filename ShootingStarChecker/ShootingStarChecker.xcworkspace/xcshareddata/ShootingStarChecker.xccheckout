@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EBC5D7AF-8B44-442D-A9C8-B7586D0792C0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShootingStarChecker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA4B061E18441939B9C3C3004328B289B51BF6B0</key>
+		<string>https://github.com/kouki-dan/ShootingStarChecker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShootingStarChecker/ShootingStarChecker.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA4B061E18441939B9C3C3004328B289B51BF6B0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kouki-dan/ShootingStarChecker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA4B061E18441939B9C3C3004328B289B51BF6B0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA4B061E18441939B9C3C3004328B289B51BF6B0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShootingStarChecker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
