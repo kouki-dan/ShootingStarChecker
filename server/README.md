@@ -1,3 +1,3 @@
-# Altstars for web
+# ShootingStarChekerのサーバー
 
-It's web program.
+サーバーです
