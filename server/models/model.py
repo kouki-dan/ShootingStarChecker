@@ -34,8 +34,13 @@ class Response(Base):
   username = Column(Text())
   created = Column(DateTime)
   text = Column(Text())
+  bbs_id = Column("bbs_id", Integer, ForeignKey(BBS.id))
 #relationship
-  relationship("BBS", backref="responses")
+  bbs = relationship("BBS", backref="responses")
+  def __init__(self, text, username):
+    self.username = username
+    self.text = text
+    self.created = datetime.now()
 
 
 # FOR DEBUG #

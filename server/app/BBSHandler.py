@@ -13,14 +13,15 @@ class BBSHandler(tornado.web.RequestHandler):
     self.render("BBS/index.html",
         responses=responses)
 
-  def get_responses(self):
-    return [
-        {"name":"Your name", "text":"your text"},
-        {"name":"Your name", "text":"your text"},
-        {"name":"Your name", "text":"your text"},
-        {"name":"Your name", "text":"your text"},
-        {"name":"Your name", "text":"your text"},
-    ]
+  def post(self):
+    """ Publish to BBS
+    """
+    pass
 
+  def get_responses(self, id_=1):
+    session = Session()
+    bbs = session.query(BBS).filter(BBS.id == id_).one()
 
+    responses = [ res.toDict() for res in bbs.responses]
+    return responses
 
