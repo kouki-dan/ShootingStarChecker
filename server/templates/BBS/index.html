@@ -3,6 +3,28 @@
 {% block body %}
 <h1>ShootingStarChecker BBS</h1>
 
+<div>
+  <form method="POST" action="">
+    {% raw xsrf_form_html() %}
+    <div>
+      Name:<input name="username" type="text"></input>
+      Mail:<input name="mail" type="text"></input>
+    </div>
+    <div>
+      <textarea name="text" rows="10" cols="80"></textarea>
+      {% try %}
+        {% if errors["text"] %}
+          It is required
+        {% end %}
+        {% except %}
+      {% end %}
+    </div>
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
+
 {% for response in responses %}
 <ul>
   <li>

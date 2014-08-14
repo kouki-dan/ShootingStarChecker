@@ -23,7 +23,7 @@ class Application(tornado.web.Application):
   def __init__(self):
     handlers = [
         (r"/", HomeHandler),
-        (r"/BBS", BBSHandler),
+        (r"/BBS/(\d+)", BBSHandler),
         ]
     settings = dict(
         cookie_secret="iTEu6rAdhu8QPwwPzxZkpghUGqohdt",

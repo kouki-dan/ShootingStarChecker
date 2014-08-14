@@ -15,5 +15,4 @@ for i in range(10):
 
 session.add(bbs)
 session.commit()
-
       
