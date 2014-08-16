@@ -3,4 +3,6 @@ xcodeproj './ShootingStarChecker.xcodeproj'
 pod 'AFNetworking', '~> 2.0' 
 pod 'AFNetworkActivityLogger', '~> 2.0'
 pod 'QuickDialog'
+pod 'SVProgressHUD', :head
+
 
