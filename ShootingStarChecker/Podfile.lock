@@ -23,21 +23,59 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - libwebp (0.4.1):
+    - libwebp/dec
+    - libwebp/demux
+    - libwebp/dsp
+    - libwebp/enc
+    - libwebp/mux
+    - libwebp/utils
+    - libwebp/webp
+  - libwebp/dec (0.4.1):
+    - libwebp/enc
+    - libwebp/utils
+  - libwebp/demux (0.4.1):
+    - libwebp/utils
+  - libwebp/dsp (0.4.1):
+    - libwebp/dec
+    - libwebp/enc
+    - libwebp/utils
+  - libwebp/enc (0.4.1):
+    - libwebp/utils
+  - libwebp/mux (0.4.1):
+    - libwebp/utils
+  - libwebp/utils (0.4.1):
+    - libwebp/dsp
+    - libwebp/webp
+  - libwebp/webp (0.4.1)
   - QuickDialog (1.0):
     - QuickDialog/Core
   - QuickDialog/Core (1.0)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+    - SDWebImage/MapKit
+    - SDWebImage/WebP
+  - SDWebImage/Core (3.7.1)
+  - SDWebImage/MapKit (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/WebP (3.7.1):
+    - libwebp
+    - SDWebImage/Core
   - SVProgressHUD (HEAD based on 1.0)
 
 DEPENDENCIES:
   - AFNetworkActivityLogger (~> 2.0)
   - AFNetworking (~> 2.0)
   - QuickDialog
+  - SDWebImage (~> 3.6)
   - SVProgressHUD (HEAD)
 
 SPEC CHECKSUMS:
   AFNetworkActivityLogger: d6a2d2755fada3a1fbf1f490ec0dd92224e092a4
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  libwebp: 88e6e172a01df354b0a78400d2e5b87a9f2796cb
   QuickDialog: 1f1df7b87d608bcbb3919f4ec809bd7d7ae50101
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
 
 COCOAPODS: 0.32.1
