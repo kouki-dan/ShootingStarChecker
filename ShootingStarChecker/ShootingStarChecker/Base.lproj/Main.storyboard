@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vHx-Kr-KtL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vHx-Kr-KtL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
         <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -116,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="1479" y="992"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation-->
         <scene sceneID="mI0-La-0KP">
             <objects>
                 <viewController id="Fre-8L-B40" customClass="BBSViewController" customModule="ShootingStarChecker" customModuleProvider="target" sceneMemberID="viewController">
@@ -128,28 +128,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-Iq-d1C">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-Iq-d1C">
                                 <rect key="frame" x="0.0" y="508" width="600" height="45"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dyu-JS-L6K">
-                                        <rect key="frame" x="8" y="0.0" width="512" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCk-hR-HFO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCk-hR-HFO">
                                         <rect key="frame" x="536" y="0.0" width="36" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="17M-Uc-vzQ"/>
+                                        </constraints>
                                         <state key="normal" title="Send">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dyu-JS-L6K">
+                                        <rect key="frame" x="8" y="0.0" width="512" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="A97-cD-nfs"/>
+                                    <constraint firstItem="HCk-hR-HFO" firstAttribute="top" secondItem="Dyu-JS-L6K" secondAttribute="top" id="Ne4-7H-JZ2"/>
+                                    <constraint firstItem="HCk-hR-HFO" firstAttribute="top" secondItem="Sdo-Iq-d1C" secondAttribute="top" id="ORT-vt-H6g"/>
+                                    <constraint firstAttribute="trailing" secondItem="HCk-hR-HFO" secondAttribute="trailing" constant="28" id="Q9m-8q-ihU"/>
+                                    <constraint firstItem="HCk-hR-HFO" firstAttribute="leading" secondItem="Dyu-JS-L6K" secondAttribute="trailing" constant="16" id="STG-qq-UNQ"/>
+                                    <constraint firstItem="Dyu-JS-L6K" firstAttribute="leading" secondItem="Sdo-Iq-d1C" secondAttribute="leading" constant="8" id="gUC-Gq-8zF"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JRA-XJ-pn2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="498"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JRA-XJ-pn2">
+                                <rect key="frame" x="0.0" y="64" width="600" height="434"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainCell" id="C4Q-ce-hK4">
@@ -168,17 +176,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="top" secondItem="JRA-XJ-pn2" secondAttribute="bottom" id="00O-GR-p17"/>
-                            <constraint firstItem="gGT-M2-Iet" firstAttribute="top" secondItem="Sdo-Iq-d1C" secondAttribute="bottom" id="0fC-A8-tsH"/>
-                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="leading" secondItem="rDR-gP-NCK" secondAttribute="leadingMargin" id="8Yz-76-wz1"/>
-                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="top" secondItem="JRA-XJ-pn2" secondAttribute="bottom" id="PUa-3J-ah0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JRA-XJ-pn2" secondAttribute="trailing" id="TOA-kU-aGP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Sdo-Iq-d1C" secondAttribute="trailing" id="gRL-Bj-M7h"/>
-                            <constraint firstItem="JRA-XJ-pn2" firstAttribute="top" secondItem="rDR-gP-NCK" secondAttribute="top" id="mcS-FK-uv1"/>
-                            <constraint firstItem="JRA-XJ-pn2" firstAttribute="leading" secondItem="rDR-gP-NCK" secondAttribute="leadingMargin" id="whx-gU-nfh"/>
+                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="top" secondItem="JRA-XJ-pn2" secondAttribute="bottom" constant="10" id="00O-GR-p17"/>
+                            <constraint firstItem="gGT-M2-Iet" firstAttribute="top" secondItem="Sdo-Iq-d1C" secondAttribute="bottom" constant="-2" id="0fC-A8-tsH"/>
+                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="leading" secondItem="rDR-gP-NCK" secondAttribute="leadingMargin" constant="-16" id="8Yz-76-wz1"/>
+                            <constraint firstItem="Sdo-Iq-d1C" firstAttribute="top" secondItem="JRA-XJ-pn2" secondAttribute="bottom" constant="10" id="PUa-3J-ah0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JRA-XJ-pn2" secondAttribute="trailing" constant="-16" id="TOA-kU-aGP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sdo-Iq-d1C" secondAttribute="trailing" constant="-16" id="gRL-Bj-M7h"/>
+                            <constraint firstItem="JRA-XJ-pn2" firstAttribute="top" secondItem="rDR-gP-NCK" secondAttribute="top" constant="64" id="mcS-FK-uv1"/>
+                            <constraint firstItem="JRA-XJ-pn2" firstAttribute="leading" secondItem="rDR-gP-NCK" secondAttribute="leadingMargin" constant="-16" id="whx-gU-nfh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WSn-hy-xyo"/>
+                    <navigationItem key="navigationItem" title="Navigation" id="WSn-hy-xyo"/>
                     <connections>
                         <outlet property="bbsTableView" destination="JRA-XJ-pn2" id="bRm-Ct-FqA"/>
                     </connections>
