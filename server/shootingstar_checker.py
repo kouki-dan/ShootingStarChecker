@@ -17,13 +17,14 @@ define("port", default=8888, help="run on the given port", type=int)
 
 from session import Session
 from app.HomeHandler import HomeHandler
-from app.BBSHandler import BBSHandler
+from app.BBSHandler import BBSHandler,BBSApiHandler
 
 class Application(tornado.web.Application):
   def __init__(self):
     handlers = [
         (r"/", HomeHandler),
         (r"/BBS/(\d+)", BBSHandler),
+        (r"/api/v1.0/BBS/(\d+)", BBSApiHandler),
         ]
     settings = dict(
         cookie_secret="iTEu6rAdhu8QPwwPzxZkpghUGqohdt",
