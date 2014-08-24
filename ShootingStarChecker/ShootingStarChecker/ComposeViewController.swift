@@ -8,6 +8,8 @@
 
 import UIKit
 
+var prevText = ""
+
 class ComposeViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
@@ -31,12 +33,19 @@ class ComposeViewController: UIViewController {
     
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        prevText = textView.text
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        textView.text = prevText
+    }
+    
     func keyboardWasShown(sender: NSNotification){
         let s = sender.userInfo![UIKeyboardFrameEndUserInfoKey] as NSValue;
         let rect :CGRect = s.CGRectValue();
         
         self.toolBarBottom.constant = rect.height-49;
-        
     }
     
     func hideKeyboard() {
@@ -62,6 +71,7 @@ class ComposeViewController: UIViewController {
         //TODO: send to server
         
         SVProgressHUD.show()
+    
     }
 
     /*
