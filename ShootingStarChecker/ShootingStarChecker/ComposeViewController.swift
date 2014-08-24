@@ -75,7 +75,7 @@ class ComposeViewController: UIViewController {
         
         let manager = AFHTTPRequestOperationManager()
         var param:Dictionary<String, String> = ["username" : "your name", "text" : textView.text]
-        manager.POST("http://localhost:8888/api/v1.0/BBS/1", parameters: param,
+        manager.POST(API_ROOT+"/BBS/1", parameters: param,
             success: { (operation: AFHTTPRequestOperation!, responseObject:AnyObject!) in
                 println("response: \(responseObject)")
                 
@@ -84,7 +84,7 @@ class ComposeViewController: UIViewController {
                 self.navigationController.popViewControllerAnimated(true)
             }, failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
                 println("Error: \(error)")
-            
+                
                 SVProgressHUD.showErrorWithStatus("Network error")
         })
 
