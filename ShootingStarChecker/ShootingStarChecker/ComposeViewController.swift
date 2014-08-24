@@ -59,6 +59,9 @@ class ComposeViewController: UIViewController {
     @IBAction func sendResponse(sender: AnyObject) {
     
         print(textView.text)
+        //TODO: send to server
+        
+        SVProgressHUD.show()
     }
 
     /*
