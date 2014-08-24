@@ -189,10 +189,7 @@
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3a-fS-lIS">
                                 <rect key="frame" x="0.0" y="512" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="camera" id="dyD-tC-7FL"/>
-                                    <barButtonItem title="Item" width="263" id="QTH-MW-afi"/>
-                                </items>
+                                <items/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -209,7 +206,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Writing" id="uHj-cK-ZPF">
-                        <barButtonItem key="rightBarButtonItem" title="Send" id="Rv3-n8-w7n"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="Rv3-n8-w7n">
+                            <connections>
+                                <action selector="sendResponse:" destination="vev-aJ-BcM" id="4bk-nW-nNa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

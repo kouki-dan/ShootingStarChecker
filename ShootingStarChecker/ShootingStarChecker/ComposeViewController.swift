@@ -47,13 +47,19 @@ class ComposeViewController: UIViewController {
         self.toolBarBottom.constant = 0;
     }
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self);
+    }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func sendResponse(sender: AnyObject) {
+    
+        print(textView.text)
+    }
 
     /*
     // MARK: - Navigation

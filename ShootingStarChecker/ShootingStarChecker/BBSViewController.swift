@@ -16,35 +16,7 @@ class BBSViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-  /*
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWasShown:"), name: UIKeyboardWillShowNotification, object: nil)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillBeHidden"), name: UIKeyboardWillHideNotification, object: nil)
-        
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("hideKeyboard"))
-        self.bbsTableView.addGestureRecognizer(gestureRecognizer)
-    */   
     }
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self);
-    }
-/*
-    func keyboardWasShown(sender: NSNotification){
-        let s = sender.userInfo![UIKeyboardFrameEndUserInfoKey] as NSValue;
-        let rect :CGRect = s.CGRectValue();
-
-        self.inputFieldBottom.constant = rect.height-49;
-
-    }
-    
-    func hideKeyboard() {
-        self.textField.resignFirstResponder()
-    }
-    
-    func keyboardWillBeHidden(){
-        self.inputFieldBottom.constant = 0;
-    }
-*/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
