@@ -9,7 +9,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 bbs = BBS(name="first BBS")
 
-for i in range(10):
+for i in range(100):
   res = Response("textext{}".format(i), "namee")
   bbs.responses.append(res)
 

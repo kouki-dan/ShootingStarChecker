@@ -71,7 +71,6 @@ class ComposeViewController: UIViewController {
         //TODO: send to server
         
         SVProgressHUD.show()
-    
         
         let manager = AFHTTPRequestOperationManager()
         var param:Dictionary<String, String> = ["username" : "your name", "text" : textView.text]

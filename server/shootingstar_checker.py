@@ -32,6 +32,7 @@ class Application(tornado.web.Application):
         static_path=os.path.join(os.path.dirname(__file__), "static"),
         debug=True,
         login_url="/auth/login",
+        xsrf_cookies=False,
         )
     tornado.web.Application.__init__(self, handlers, **settings)
 
