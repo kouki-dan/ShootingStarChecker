@@ -116,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="1479" y="992"/>
         </scene>
-        <!--Navigation-->
+        <!--BBS-->
         <scene sceneID="mI0-La-0KP">
             <objects>
                 <viewController id="Fre-8L-B40" customClass="BBSViewController" customModule="ShootingStarChecker" customModuleProvider="target" sceneMemberID="viewController">
@@ -154,7 +154,7 @@
                             <constraint firstItem="JRA-XJ-pn2" firstAttribute="bottom" secondItem="gGT-M2-Iet" secondAttribute="top" constant="-64" id="ycb-tl-QMj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Navigation" id="WSn-hy-xyo">
+                    <navigationItem key="navigationItem" title="BBS" id="WSn-hy-xyo">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="20d-8V-Ort">
                             <connections>
                                 <segue destination="vev-aJ-BcM" kind="show" id="5IS-GB-U3J"/>
@@ -167,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bkb-aT-cpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1455" y="1758"/>
+            <point key="canvasLocation" x="1479" y="1758"/>
         </scene>
         <!--Writing-->
         <scene sceneID="NKy-wh-7QI">
