@@ -10,6 +10,21 @@ import UIKit
 
 class ShootingStarListTableViewController: UITableViewController {
 
+    let shootingstarLists = [
+        "しぶんぎ座流星群",
+        "こと座流星群",
+        "みずがめ座η流星群",
+        "みずがめ座δ流星群",
+        "やぎ座流星群",
+        "ペルセウス座流星群",
+        "りゅう座流星群",
+        "オリオン座流星群",
+        "おうし座流星群",
+        "しし座流星群",
+        "ふたご座流星群",
+        "こぐま座流星群",
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +51,7 @@ class ShootingStarListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 12
+        return shootingstarLists.count
     }
 
     
@@ -45,8 +60,7 @@ class ShootingStarListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("MainCell", forIndexPath: indexPath) as UITableViewCell
 
         // Configure the cell...
-        cell.textLabel.text = "No." + String(indexPath.row)
-
+        cell.textLabel.text = shootingstarLists[indexPath.row]
         
         return cell
     }
