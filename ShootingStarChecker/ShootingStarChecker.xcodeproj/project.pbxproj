@@ -20,6 +20,7 @@
 		1E8993081998588A005D9E42 /* ShootingStarListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8993071998588A005D9E42 /* ShootingStarListTableViewController.swift */; };
 		1E89930A199A5CC1005D9E42 /* BBSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E899309199A5CC1005D9E42 /* BBSViewController.swift */; };
 		1EA6623D19A99D2D0008276A /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6623C19A99D2D0008276A /* ComposeViewController.swift */; };
+		1EAD10D219B9D79500A4CBCB /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD10D119B9D79500A4CBCB /* ConfigViewController.swift */; };
 		4AA92F894BD44FD39046CC7C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B290AD740BA84340969E91A7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		1E8993071998588A005D9E42 /* ShootingStarListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShootingStarListTableViewController.swift; sourceTree = "<group>"; };
 		1E899309199A5CC1005D9E42 /* BBSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBSViewController.swift; sourceTree = "<group>"; };
 		1EA6623C19A99D2D0008276A /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		1EAD10D119B9D79500A4CBCB /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		1EEBA3E919A9A9BA00A1F938 /* ShootingStarChecker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShootingStarChecker-Bridging-Header.h"; sourceTree = "<group>"; };
 		B290AD740BA84340969E91A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				1E1638B6197D1A8F00121221 /* HomeTableViewController.swift */,
 				1E8993071998588A005D9E42 /* ShootingStarListTableViewController.swift */,
 				1E1638B8197D1CF100121221 /* MainTableViewCell.swift */,
+				1EAD10D119B9D79500A4CBCB /* ConfigViewController.swift */,
 				1E1638A0197CEE8C00121221 /* Images.xcassets */,
 				1E163898197CEE8C00121221 /* ShootingStarChecker.xcdatamodeld */,
 				1E163894197CEE8C00121221 /* Supporting Files */,
@@ -287,6 +290,7 @@
 				1E1638B7197D1A8F00121221 /* HomeTableViewController.swift in Sources */,
 				1E16389C197CEE8C00121221 /* ViewController.swift in Sources */,
 				1EA6623D19A99D2D0008276A /* ComposeViewController.swift in Sources */,
+				1EAD10D219B9D79500A4CBCB /* ConfigViewController.swift in Sources */,
 				1E644F6E19AAFC9000018301 /* Response.swift in Sources */,
 				1E16389A197CEE8C00121221 /* ShootingStarChecker.xcdatamodeld in Sources */,
 				1E644F6C19AA282E00018301 /* BBS.swift in Sources */,

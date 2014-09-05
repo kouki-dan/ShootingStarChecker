@@ -4,4 +4,4 @@
 
 #import <AFNetworking/AFNetworking.h>
 #import <SVProgressHUD/SVProgressHUD.h>
-
+#import "QuickDialog.h"
