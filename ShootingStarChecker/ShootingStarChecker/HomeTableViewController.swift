@@ -41,12 +41,14 @@ class HomeTableViewController: UITableViewController {
     }
 
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell? {
-        var cell = tableView.dequeueReusableCellWithIdentifier("MainCell", forIndexPath: indexPath) as? UITableViewCell
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("MainCell", forIndexPath: indexPath) as UITableViewCell
         
         // Configure the cell...
-
+        
         return cell
+
     }
     
 

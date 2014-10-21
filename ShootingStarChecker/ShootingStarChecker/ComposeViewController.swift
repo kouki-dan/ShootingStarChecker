@@ -80,7 +80,7 @@ class ComposeViewController: UIViewController {
                 
                 self.textView.text = ""
                 SVProgressHUD.showSuccessWithStatus("Success!!")
-                self.navigationController.popViewControllerAnimated(true)
+                self.navigationController!.popViewControllerAnimated(true)
             }, failure: { (operation: AFHTTPRequestOperation!, error: NSError!) in
                 println("Error: \(error)")
                 

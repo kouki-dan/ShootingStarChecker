@@ -57,16 +57,18 @@ class BBSViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int  {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return bbs.responseCount()
     }
     
-    func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath:NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MainCell")
-        cell.textLabel.text = bbs.responseWithNumber(indexPath.row).text
+        cell.textLabel!.text = bbs.responseWithNumber(indexPath.row).text
         return cell;
+
     }
+    
     
     func tableView(tableView: UITableView?, didSelectRowAtIndexPath indexPath:NSIndexPath!) {
         println(indexPath.row)
